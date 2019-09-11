@@ -38,4 +38,6 @@ Route::prefix('api')->group(function(){
 
 Route::prefix('computer')->group(function(){
     Route::get('selector', 'ComputerController@selector');
+    Route::get('play', 'ComputerController@play')->name('computer.play');
+    Route::get('configure', 'ComputerController@configure')->name('computer.configure');
 });
